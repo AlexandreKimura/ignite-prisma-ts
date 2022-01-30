@@ -34,8 +34,8 @@ model Deliveries {
   id_client   String
   client      Clients     @relation(fields: [id_client], references: [id])
 
-  id_delivery String?
-  deliveryman DeliveryMan? @relation(fields: [id_delivery], references: [id])
+  id_deliveryman String?
+  deliveryman DeliveryMan? @relation(fields: [id_deliveryman], references: [id])
 
   item_name   String
   
